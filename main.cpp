@@ -20,8 +20,7 @@ void returnKeyAndValue(){
 
 int main() {
 
-    while(getline(cin,linea)){
-        if(linea.empty()) break;
+    while(getline(cin,linea), !linea.empty()){
         returnKeyAndValue();
         diccionario.emplace(key,value);
     }
